@@ -2,12 +2,14 @@
 <html class="html" lang="en-US">
  <head>
 
-  <style type="text/css">
-      html, body, #map-canvas { height: 50%; margin: 0; padding: 0;}
-    </style>
+  <!-- places header -->
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+  <script src="js/script.js"></script>
+
 
   <script type="text/javascript">
-   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "jquery.watch.js", "upload.js", "index.css"], "outOfDate":[]};
+   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "jquery.watch.js", "places.js", "places.css", "index.css"], "outOfDate":[]};
 </script>
   
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
@@ -17,32 +19,52 @@
   <link rel="stylesheet" type="text/css" href="css/site_global.css?422415861"/>
   <link rel="stylesheet" type="text/css" href="css/index.css?3951672520" id="pagesheet"/>
 
-  <!-- maps api -->
-  <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAJWUTLru6gQ78vFOgJwaaEXzhhEjvGs4">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: { lat: -37.3492, lng: 121.9381},
-          zoom: 8
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-  </head>
-  <body>
-<div id="map-canvas"></div>
-  </body>
-
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
 </script>
    </head>
  <body>
+
+  <!-- places body -->
+  <div id="gmap_canvas"></div>
+  <div class="actions">
+      <div class="button">
+          <label for="gmap_where">Where:</label>
+          <input id="gmap_where" type="text" name="gmap_where" /></div>
+     <div id="button2" class="button" onclick="findAddress(); return false;">Search for address</div>
+      <div class="button">
+          <label for="gmap_keyword">Keyword (optional):</label>
+          <input id="gmap_keyword" type="text" name="gmap_keyword" /></div>
+      <div class="button">
+         <label for="gmap_type">Type:</label>
+          <select id="gmap_type">
+              <option value="art_gallery">art_gallery</option>
+              <option value="atm">atm</option>
+              <option value="bank">bank</option>
+             <option value="bar">bar</option>
+             <option value="cafe">cafe</option>
+             <option value="food">food</option>
+             <option value="hospital">hospital</option>
+             <option value="police">police</option>
+             <option value="store">store</option>
+         </select>
+      </div>
+      <div class="button">
+          <label for="gmap_radius">Radius:</label>
+          <select id="gmap_radius">
+              <option value="500">500</option>
+              <option value="1000">1000</option>
+              <option value="1500">1500</option>
+              <option value="5000">5000</option>
+          </select>
+      </div>
+      <input type="hidden" id="lat" name="lat" value="40.7143528" />
+      <input type="hidden" id="lng" name="lng" value="-74.0059731" />
+      <div id="button1" class="button" onclick="findPlaces(); return false;">Search for objects</div>
+  </div>
+
+  <!-- end -->
 
   <div class="clearfix" id="page"><!-- column -->
    <div class="clearfix colelem" id="u75-5"><!-- content -->
