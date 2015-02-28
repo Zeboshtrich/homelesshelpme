@@ -53,8 +53,8 @@ function findAddress() {
             map.setCenter(addrLocation);
 
             // store current coordinates into hidden variables
-            document.getElementById('lat').value = results[0].geometry.location.lat();
-            document.getElementById('lng').value = results[0].geometry.location.lng();
+            document.getElementById('lat').value = results[0].geometry.location.$a;
+            document.getElementById('lng').value = results[0].geometry.location.ab;
 
             // and then - add new custom marker
             var addrMarker = new google.maps.Marker({
