@@ -1,8 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" >
-    <head>
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+<!--<![endif]-->
 
-    <!-- Google Analytics--> 
+<!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -11,79 +14,68 @@
 
       ga('create', 'UA-60224269-1', 'auto');
       ga('send', 'pageview');
+
     </script>
+<!-- End of Google Analytics -->
 
-    <!--Google Places API header-->
-    <meta charset="utf-8" />
-    <title>Homeless Help Me</title>
-    <link href="css/main.css" rel="stylesheet" type="text/css"/>
-    <script src= "script.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
-    <script src="js/script.js"></script>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HomelessHelp.me</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+<script src="js/script.js"></script>
 
-    <!-- Youtube Upload API header-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/stellar/jquery.stellar.min.js"></script>
+<script type="text/javascript" src="js/waypoints/waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+
+<!-- Youtube Upload API header-->
     <link rel="stylesheet" href="uploadYoutube.css">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
     <script src= "uploadYoutube.js"></script>
-    </head>
 
+</head>
+<body>
 
-    <body> 
-        <header>
+	<header>
             <h2>Welcome to Homeless Help Me</h2>
-        </header>
-
-        <!-- Upload Youtube Video Implementation -->
-
-        <p style= "color:black" "font-size:20px"> To upload a video onto Youtube, first sign in to your Google account, then name your video and write a short description for it. Then choose the file to upload. </p>
+    </header>
+    
+    
+	<div class="gridContainer clearfix">
+		<div id="div1" class="fluid">Use Insert Panel for additional Fluid Grid Layout Elements. Note: All Fluid Layout tags must be contained within the "gridContainer" div tag.</div>
         
-        <span id="signinButton" class="pre-sign-in">
-            <!-- IMPORTANT: Replace the value of the <code>data-clientid</code>
-           attribute in the following tag with your project's client ID. -->
-            <span
-                class="g-signin"
-                data-callback="signinCallback"
-                data-clientid="740708278651-cqb7q7okn9mjlc2iu7qder8vdqap2p2b.apps.googleusercontent.com"
-                data-cookiepolicy="single_host_origin"
-                data-scope="https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube">
-            </span>
-        </span>
 
-        <div class="post-sign-in">
-            <div>
-                <img id="channel-thumbnail">
-                <span id="channel-name"></span>
-            </div>
-
-            <div>
-                <label for="title" style= "color:black" "font-size:20px">Title:</label>
-                <input id="title" type="text" value="Default Title">
-            </div>
-            <div>
-                <label for="description" style= "color:black" "font-size:20px">Description:</label>
-                <textarea id="description">Default description</textarea>
-            </div>
-            <div>
-                <label for="privacy-status" style= "color:black" "font-size:20px">Privacy Status:</label>
-                <select id="privacy-status">
-                    <option>public</option>
-                    <option>unlisted</option>
-                    <option>private</option>
-                </select>
-            </div>
-
-            <div>
-                <input input type="file" id="file" class="button" accept="video/*">
-                <button id="button">Upload Video</button>
+	    <div class="slide" id="intro" data-slide="1" data-stellar-background-ratio="0.5">Intro</div>
+        <div class="slide" id="video_player" data-slide="2" data-stellar-background-ratio="0.5">Video Player
+        
+        
+        
         </div>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="//apis.google.com/js/client:plusone.js"></script>
-        <script src="cors_upload.js"></script>
-        <script src="upload_video.js"></script>
-
-
+        
+        
+        <div class="slide" id="maps_api" data-slide="3" data-stellar-background-ratio="0.5">Google Maps
+        
         <!-- Google API Implementation -->
         <div id="container" class="container">
             <div id="gmap_canvas"></div>
@@ -123,7 +115,14 @@
                 <div id="button1" class="button" onclick="findPlaces(); return false;">Search for objects</div>
             </div>
         </div>
+        
+        </div>
+        
+        
+        <div class="slide" id="weather_api" data-slide="4" data-stellar-background-ratio="0.5">Weather</div>
+        <div class="slide" id="resources" data-slide="5" data-stellar-background-ratio="0.5">Resources</div>
+    </div>
+</body>
+    
 
-
-    </body>
 </html>
