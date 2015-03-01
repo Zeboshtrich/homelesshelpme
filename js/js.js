@@ -1,15 +1,6 @@
 jQuery(document).ready(function ($) {
  
  	//back to top button
-	$('a[href^="#"]').on('click', function(event) {
-    var target = $(this.href);
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: target.offset().top
-        }, 3000);
-    }
-});
 	
 	
     //initialise Stellar.js
