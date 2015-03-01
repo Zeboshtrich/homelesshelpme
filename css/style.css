@@ -130,10 +130,11 @@ img, object, embed, video {
 }
 
 #intro {
-	background-color: #E9F4FF;
-	height: 95%;
+	color: #E9F4FF;
+	height: auto;
+	font-family: 'brandon-grotesque', sans-serif;
+	display: block;
 	margin:auto;
-	display:block;
 }
 
 #intro_text {
