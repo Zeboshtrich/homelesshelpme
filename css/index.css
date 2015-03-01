@@ -1,35 +1,28 @@
 .version.index /* version checker */
 {
-	color: #0000EB;
-	background-color: #89BCC8;
+	color: #000006;
+	background-color: #AFBD8B;
 }
 
 .html
 {
-	background-color: #3B424C;
+	background-color: #D44636;
 }
 
 #page
 {
 	z-index: 1;
-	width: 286px;
-	min-height: 34px;
+	width: 0px;
+	min-height: 0px;
 	background-image: none;
 	border-style: none;
 	border-color: #000000;
 	background-color: transparent;
+	padding-top: 62px;
+	padding-right: 960px;
+	padding-bottom: 438px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 144px 409px 322px 265px;
-}
-
-#u75-5
-{
-	z-index: 2;
-	width: 286px;
-	min-height: 19px;
-	background-color: transparent;
-	position: relative;
 }
 
 body
