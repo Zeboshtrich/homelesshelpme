@@ -220,6 +220,7 @@ img, object, embed, video {
 #intro a {
 	padding-left:10px; 
 	padding-right:10px; 
+	font-family: 'brandon-grotestque', sans-serif;
 	text-decoration: none;
 	color:#3396FC; 
 }
