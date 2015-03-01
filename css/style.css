@@ -165,7 +165,7 @@ ul {
 }
 li {
 	font-family: "brandon-grotesque" , sans-serif;
-	font-size:14px;
+	font-size:30px;
 	display: inline-block;
 	color: #EDEDED;
 	text-align: center;
@@ -196,4 +196,12 @@ h2 {
 	margin:auto;
 	padding-top:10%;
 }
+
+#arrow {
+	height:75px;
+	display:block;
+	margin:auto;
+}
+
+
 }
