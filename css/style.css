@@ -149,11 +149,17 @@ li {
 	font-family: "brandon-grotesque" , sans-serif;
 	font-size:30px;
 	display: inline-block;
-	color: #EDEDED;
+	color: #3396FC;
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
 	vertical-align: middle;
+}
+
+li:hover {
+	color:#CCF84D;
+	text-decoration:underline;
+	font-weight:600;
 }
 
 #logo {
