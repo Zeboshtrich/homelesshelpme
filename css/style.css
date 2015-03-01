@@ -121,6 +121,16 @@ img, object, embed, video {
 	display:block;
 	color: Black;
 	text-align: left;
+
+#navbar {
+	font-family: 'brandon-grotesque', sans-serif;
+	font-size: 40px;
+	width:100%;
+	margin:auto;
+	display:block;
+	color: 3396FC;
+	text-align: left;
+}
 }
 #intro {
 	background-color: #E9F4FF;
