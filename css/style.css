@@ -130,7 +130,7 @@ img, object, embed, video {
 }
 
 #intro {
-	color: #E9F4FF;
+	background-color:#E9F4FF;
 	height: auto;
 	font-family: 'brandon-grotesque', sans-serif;
 	display: block;
@@ -164,7 +164,7 @@ img, object, embed, video {
 #resources {
 	background-color:#E9F4FF;
 	font-family: 'brandon-grotesque', sans-serif;
-	font-size: 18px;
+	font-size: 24px;
 	width:100%;
 	margin:auto;
 	display:block;
