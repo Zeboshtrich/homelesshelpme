@@ -147,6 +147,13 @@ img, object, embed, video {
 
 #resources {
 	background-color:#E9F4FF;
+	font-family: 'brandon-grotesque', sans-serif;
+	font-size: 18px;
+	width:100%;
+	margin:auto;
+	display:block;
+	color: #585858;
+	text-align:left;
 
 }
 
