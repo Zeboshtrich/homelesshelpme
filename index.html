@@ -127,21 +127,6 @@ Do the following if you're using your customized build of modernizr (http://www.
         
         <div class="fluid" id="weather_api" data-slide="4" data-stellar-background-ratio="0.5">Weather</div>
         <div class="fluid" id="resources" data-slide="5" data-stellar-background-ratio="0.5">Resources</div>
-        <script>
-        
-        function getLocation() {
-        if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-        } 
-        else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-        }
-        function showPosition(position) {
-        x.innerHTML = "Latitude: " + position.coords.latitude + 
-        "<br>Longitude: " + position.coords.longitude; 
-        }
-        </script>
     </div>
 </body>
     

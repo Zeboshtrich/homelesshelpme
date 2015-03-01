@@ -8,20 +8,14 @@ function initialize() {
     geocoder = new google.maps.Geocoder();
 
     // intial position
-    if(navigator.geolocation){
-    var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-    }
-    else{
-        myLatling = new google.maps.LatLng(37.3544,-121.9692);
-    }
+    var myLatlng = new google.maps.LatLng(37.3544,-121.9692);
+
     var myOptions = { // default map options
         zoom: 14,
         center: myLatlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-
-    
 }
 
 // clear overlays function
@@ -46,14 +40,9 @@ function clearInfos() {
     }
 }
 
-function currentLocation(){
-
-
-}
-
 // find address function
 function findAddress() {
-    var address = document.getElementById("gmap_where").value
+    var address = document.getElementById("gmap_where").value;
 
     // script uses our 'geocoder' in order to find location by address name
     geocoder.geocode( { 'address': address}, function(results, status) {
