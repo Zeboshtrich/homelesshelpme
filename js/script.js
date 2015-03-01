@@ -8,7 +8,7 @@ function initialize() {
     geocoder = new google.maps.Geocoder();
 
     // intial position
-    var myLatlng = new google.maps.LatLng(37.2115,-121.5715);
+    var myLatlng = new google.maps.LatLng(37.3544,-121.9692);
 
     var myOptions = { // default map options
         zoom: 14,
