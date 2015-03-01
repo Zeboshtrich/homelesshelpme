@@ -6,22 +6,16 @@ var infos = Array();
 function initialize() {
     // prepare Geocoder
     geocoder = new google.maps.Geocoder();
-     if (status == google.maps.GeocoderStatus.OK){
-        var pos = new google.maps.LatLng(position.coords.latitude,
-                                       position.coords.longitude);
-     }
-     else{
+
     // intial position
     var myLatlng = new google.maps.LatLng(37.3544,-121.9692);
 
     var myOptions = { // default map options
         zoom: 14,
-        center: pos,
+        center: myLatlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-}
     map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-   
 }
 
 // clear overlays function
