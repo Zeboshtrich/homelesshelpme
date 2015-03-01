@@ -139,6 +139,14 @@ img, object, embed, video {
 	background-color:#E9F4FF;
 
 }
+
+#footer {
+	background-color:#585858;
+	color:#E9F4FF;
+	height:200;
+	height:45%;
+}
+
 ul {
 	list-style-type: none;
 	text-align: center;
@@ -195,4 +203,23 @@ li:hover {
 
 #back-to-top:hover {    
     background-color: rgba(135, 135, 135, 0.50);
+}
+
+.scrollToTop{
+	width:100px; 
+	height:130px;
+	padding:10px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	top:75px;
+	right:40px;
+	display:none;
+	background: url('arrow_up.png') no-repeat 0px 20px;
+}
+.scrollToTop:hover{
+	text-decoration:none;
 }

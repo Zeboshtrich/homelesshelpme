@@ -30,6 +30,7 @@
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/scrolling.js"></script>
 <link href="css/main.css" rel="stylesheet" type="text/css">
 
 
@@ -65,9 +66,11 @@ Do the following if you're using your customized build of modernizr (http://www.
 	<div class="gridContainer clearfix">
     
         <a href="#" id="back-to-top">Back to Top</a>
+        
     
 
 	    <div class="fluid" id="intro">
+        <a href="#" class="scrollToTop">Scroll To Top</a>
         
        		<img src="images/logo.png" alt="" id="logo"/> 
         
@@ -134,6 +137,11 @@ Do the following if you're using your customized build of modernizr (http://www.
         
         <div class="fluid" id="weather_api" >Weather</div>
         <div class="fluid" id="resources" >Resources</div>
+        <div class="fluid" id="footer">
+        
+        <p>Developed by Jackson Beadle, Suparna Jasuja, Patrick Miller, and Nathan Ng in 24 hours in the Hack for the Homeless 2015 Hackathon presented by the School of Engineering at Santa Clara University and Santa Clara University Association for Computer Machinery. </p>
+        
+        </div>
         
    
         
@@ -148,8 +156,9 @@ $(function() {
             scrollTop: target.offset().top
         }, 3000);
     }
-}); 
+	}); 
 });
+
 </script>
 </body>
     
