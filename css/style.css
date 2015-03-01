@@ -131,7 +131,7 @@ img, object, embed, video {
 
 #intro {
 	background-color:#E9F4FF;
-	height: auto;
+	height: 100%;
 	font-family: 'brandon-grotesque', sans-serif;
 	display: block;
 	margin:auto;
