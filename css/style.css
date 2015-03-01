@@ -138,6 +138,8 @@ img, object, embed, video {
 }
 
 #maps_api {
+	background-color: #3B424C; 
+	font-size:36px;
 }
 
 #weather_api {
@@ -146,4 +148,9 @@ img, object, embed, video {
 
 #resources {
 
+}
+
+#container {
+	width:75%;
+	margin-left:10%;
 }

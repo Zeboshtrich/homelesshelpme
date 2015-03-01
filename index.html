@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
 <!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
 <!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="">
+<!--[if gt IE 8]><!--> <html class="" lang="en">
 <!--<![endif]-->
 
 <!-- Google Analytics -->
@@ -21,14 +21,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HomelessHelp.me</title>
+<title>Homeless Help Me</title>
 <link href="boilerplate.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<!-- Google Places API imports -->
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
 <script src="js/script.js"></script>
+<link href="css/main.css" rel="stylesheet" type="text/css">
 
+<!-- Parallax jQuery files -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript" src="js/stellar/jquery.stellar.min.js"></script>
@@ -49,10 +53,6 @@ Do the following if you're using your customized build of modernizr (http://www.
 <![endif]-->
 <script src="respond.min.js"></script>
 
-<!-- Youtube Upload API header-->
-    <link rel="stylesheet" href="uploadYoutube.css">
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
-    <script src= "uploadYoutube.js"></script>
 
 </head>
 <body>
@@ -66,61 +66,61 @@ Do the following if you're using your customized build of modernizr (http://www.
 		<div id="div1" class="fluid">Use Insert Panel for additional Fluid Grid Layout Elements. Note: All Fluid Layout tags must be contained within the "gridContainer" div tag.</div>
         
 
-	    <div class="slide" id="intro" data-slide="1" data-stellar-background-ratio="0.5">Intro</div>
-        <div class="slide" id="video_player" data-slide="2" data-stellar-background-ratio="0.5">Video Player
+	    <section class="slide" id="intro" data-slide="1" data-stellar-background-ratio="0.5">Intro</section>
+        <section class="slide" id="video_player" data-slide="2" data-stellar-background-ratio="0.5">Video Player
         
         
         
-        </div>
+        </section>
         
         
-        <div class="slide" id="maps_api" data-slide="3" data-stellar-background-ratio="0.5">Google Maps
+        <section class="slide" id="maps_api" data-slide="3" data-stellar-background-ratio="0.5"><p>Google Maps</p>
         
-        <!-- Google API Implementation -->
-        <div id="container" class="container">
-            <div id="gmap_canvas"></div>
-            <div class="actions">
-                <div class="button">
-                    <label for="gmap_where">Where:</label>
-                    <input id="gmap_where" type="text" name="gmap_where" /></div>
-                <div id="button2" class="button" onclick="findAddress(); return false;" onclick="clearOverlays(); return false;" onclick="clearInfos(); return false;">Search for address</div>
-                <div class="button">
-                    <label for="gmap_keyword">Keyword (optional):</label>
-                    <input id="gmap_keyword" type="text" name="gmap_keyword" /></div>
-                <div class="button">
-                    <label for="gmap_type">Type:</label>
-                    <select id="gmap_type">
-                        <option value="art_gallery">art_gallery</option>
-                        <option value="atm">atm</option>
-                        <option value="bank">bank</option>
-                        <option value="bar">bar</option>
-                        <option value="cafe">cafe</option>
-                        <option value="food">food</option>
-                        <option value="hospital">hospital</option>
-                        <option value="police">police</option>
-                        <option value="store">store</option>
-                    </select>
+            <!-- Google API Implementation -->
+            <div id="container" class="container">
+                <div id="gmap_canvas"></div>
+                <div class="actions">
+                    <div class="button">
+                        <label for="gmap_where">Where:</label>
+                        <input id="gmap_where" type="text" name="gmap_where" /></div>
+                    <div id="button2" class="button" onclick="findAddress(); return false;" onclick="clearOverlays(); return false;" onclick="clearInfos(); return false;">Search for address</div>
+                    <div class="button">
+                        <label for="gmap_keyword">Keyword (optional):</label>
+                        <input id="gmap_keyword" type="text" name="gmap_keyword" /></div>
+                    <div class="button">
+                        <label for="gmap_type">Type:</label>
+                        <select id="gmap_type">
+                            <option value="art_gallery">art_gallery</option>
+                            <option value="atm">atm</option>
+                            <option value="bank">bank</option>
+                            <option value="bar">bar</option>
+                            <option value="cafe">cafe</option>
+                            <option value="food">food</option>
+                            <option value="hospital">hospital</option>
+                            <option value="police">police</option>
+                            <option value="store">store</option>
+                        </select>
+                    </div>
+                    <div class="button">
+                        <label for="gmap_radius">Radius:</label>
+                        <select id="gmap_radius">
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                            <option value="5000">5000</option>
+                        </select>
+                    </div>
+                    <input type="hidden" id="lat" name="lat" value="37.3544" />
+                    <input type="hidden" id="lng" name="lng" value="-121.9692" />
+                    <div id="button1" class="button" onclick="findPlaces(); return false;">Search for objects</div>
                 </div>
-                <div class="button">
-                    <label for="gmap_radius">Radius:</label>
-                    <select id="gmap_radius">
-                        <option value="500">500</option>
-                        <option value="1000">1000</option>
-                        <option value="2000">2000</option>
-                        <option value="5000">5000</option>
-                    </select>
-                </div>
-                <input type="hidden" id="lat" name="lat" value="37.3544" />
-                <input type="hidden" id="lng" name="lng" value="-121.9692" />
-                <div id="button1" class="button" onclick="findPlaces(); return false;">Search for objects</div>
             </div>
-        </div>
         
-        </div>
+        </section>
         
         
-        <div class="slide" id="weather_api" data-slide="4" data-stellar-background-ratio="0.5">Weather</div>
-        <div class="slide" id="resources" data-slide="5" data-stellar-background-ratio="0.5">Resources</div>
+        <section class="slide" id="weather_api" data-slide="4" data-stellar-background-ratio="0.5">Weather</section>
+        <section class="slide" id="resources" data-slide="5" data-stellar-background-ratio="0.5">Resources</section>
     </div>
 </body>
     
