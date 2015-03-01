@@ -31,9 +31,12 @@
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.slider.min.css" rel="stylesheet" type="text/css">
 
 <!-- Parallax jQuery files -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript" src="js/stellar/jquery.stellar.min.js"></script>
 <script type="text/javascript" src="js/waypoints/waypoints.min.js"></script>
@@ -80,13 +83,11 @@ Do the following if you're using your customized build of modernizr (http://www.
                 <li><a href = "#resources">Resources</a></li>
             </ul>
             
-            <a href = "#videoplayer" class=><img src="images/arrow.png" alt="" id="arrow"/></a>
+          <a href = "#videoplayer" id="arrow"><img src="images/arrow.png"/></a>
             
-         </div>
+      </div>
         
         <div class="fluid" id="video_player" data-slide="2" data-stellar-background-ratio="0.5">Video Player
-        
-        
         
         </div>
         
@@ -141,7 +142,12 @@ Do the following if you're using your customized build of modernizr (http://www.
         
    
         
-    </div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Slider1" ).slider(); 
+});
+</script>
 </body>
     
 

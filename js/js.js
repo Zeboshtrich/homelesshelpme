@@ -1,27 +1,17 @@
 jQuery(document).ready(function ($) {
  
  	//back to top button
-	/*var offset = 250;
-    var duration = 500;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.back-to-top').fadeIn(duration);
-        } else {
-            jQuery('.back-to-top').fadeOut(duration);
-        }
-    });
-    
-    jQuery('.back-to-top').click(function(event) {
+	$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.href);
+    if( target.length ) {
         event.preventDefault();
-        jQuery('html, body').animate({scrollTo: 0}, duration);
-        return false;
-    })*/
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 3000);
+    }
+});
 	
-	$("#scrollTop").bind("click", function() {
-    $(window).scrollTop($(".gridContainer").offset().top); //scroll to div with container as ID.
-    return false; //Prevent Default and event bubbling.
-    });
- 
+	
     //initialise Stellar.js
     $(window).stellar();
  
