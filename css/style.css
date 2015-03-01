@@ -51,6 +51,7 @@ img, object, embed, video {
 	/*float: left;*/
 	display: block;
 	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+	color:#fff;
 }
 
 .fluidList {
@@ -69,6 +70,7 @@ img, object, embed, video {
 	padding-left: 2.275%;
 	padding-right: 2.275%;*/
 	width:100%;
+	height:auto;
 	/*clear: none;
 	float: none;*/
 }
@@ -87,6 +89,7 @@ img, object, embed, video {
 
 .gridContainer {
 	width: 100%;
+	height:auto; 
 	/*padding-left: 1.1625%;
 	padding-right: 1.1625%;
 	clear: none;
@@ -132,22 +135,25 @@ img, object, embed, video {
 #intro {
 	background-color:#E9F4FF;
 	font-size:36px;
-	
+	color:#585858;
 }
 
 #video_player {
+	background-color:#3396FC;
 }
 
 #maps_view {
-	background-color: #3B424C; 
+	background-color: #004E9C; 
 	font-size:36px;
 }
 
 #weather_api {
+	background-color:#B2C0CB;
 
 }
 
 #resources {
+	background-color:#E9F4FF;
 
 }
 ul {
