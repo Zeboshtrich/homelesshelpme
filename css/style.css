@@ -131,6 +131,7 @@ img, object, embed, video {
 .hide_desktop {
     display: none;
 }
+}
 
 #intro {
 	background-color: #E9F4FF;
@@ -201,7 +202,4 @@ h2 {
 	height:75px;
 	display:block;
 	margin:auto;
-}
-
-
 }
