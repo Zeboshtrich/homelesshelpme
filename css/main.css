@@ -44,15 +44,15 @@ header .stuts span {
 
 /* main styles */
 .container {
-    height: 700px;
+    height: 85%;
     margin: 20px auto;
     position: relative;
-    width: 900px;
+    width: 90%;
 }
 #gmap_canvas {
-    height: 700px;
+    height: 85%;
     position: relative;
-    width: 900px;
+    width: 90%;
 }
 .actions {
     background-color: #FFFFFF;
