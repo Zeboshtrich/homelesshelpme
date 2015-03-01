@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
  
  	//back to top button
-	var offset = 250;
+	/*var offset = 250;
     var duration = 500;
     jQuery(window).scroll(function() {
         if (jQuery(this).scrollTop() > offset) {
@@ -15,7 +15,12 @@ jQuery(document).ready(function ($) {
         event.preventDefault();
         jQuery('html, body').animate({scrollTo: 0}, duration);
         return false;
-    })
+    })*/
+	
+	$("#scrollTop").bind("click", function() {
+    $(window).scrollTop($(".gridContainer").offset().top); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+    });
  
     //initialise Stellar.js
     $(window).stellar();

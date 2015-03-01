@@ -148,6 +148,7 @@ ul {
 li {
 	font-family: "brandon-grotesque" , sans-serif;
 	font-size:30px;
+	font-weight:300;
 	display: inline-block;
 	color: #3396FC;
 	text-align: center;
@@ -159,7 +160,8 @@ li {
 li:hover {
 	color:#CCF84D;
 	text-decoration:underline;
-	font-weight:600;
+	font-weight:400;
+	font-style:italic;
 }
 
 #logo {
@@ -171,12 +173,14 @@ li:hover {
 }
 
 #arrow {
-	height:75px;
-	display:block;
-	margin:auto;
+	width: 5%;
+	display: block;
+	bottom:0px;
+	left:47.5%;
+	position:absolute;
 }
 
-#back-to-top {
+.back-to-top {
 	font-family: 'brandon-grotestque', sans-serif; 
     position: fixed;
     bottom: 2em;
@@ -189,6 +193,6 @@ li:hover {
     display: none;
 }
 
-#back-to-top:hover {    
+.back-to-top:hover {    
     background-color: rgba(135, 135, 135, 0.50);
 }
