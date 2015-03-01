@@ -120,7 +120,7 @@ img, object, embed, video {
 }
 
 #intro_text {
-	font-family: 'montserraf', sans-serif;
+	font-family: 'brandon-grotesque', sans-serif;
 	font-size: 24px;
 	width:75%;
 	margin:auto;
@@ -187,24 +187,27 @@ td {
 
 ul {
 	list-style-type: none;
-	text-align: center;
-	color: #3D3D3D;
-	font-size: 120px;
+	width:90%;
+	margin:auto;
+	display:block;
 }
+
 li {
-	font-family: "brandon-grotesque" , sans-serif;
-	font-size:36px;
-	font-weight:300;
 	display: inline-block;
-	color: #3396FC;
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
-	vertical-align: middle;
-	text-decoration:none;
 }
 
-li:hover {
+li a {
+	font-family: "brandon-grotesque" , sans-serif;
+	font-size:42px;
+	font-weight:300;
+	text-decoration:none;
+	color:004E9C;
+}
+
+li a:hover {
 	color:#B2C0CB;
 	text-decoration:none;
 	font-weight:400;
