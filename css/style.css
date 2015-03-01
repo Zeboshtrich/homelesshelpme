@@ -154,19 +154,27 @@ img, object, embed, video {
 	background-color: #585858;
 	color: #E9F4FF;
 	height: auto;
-	font-family: 'Montserraf', sans-serif;
+	font-family: 'brandon-grotesque', sans-serif;
 	font-size: 18px;
 	display: block;
+	margin:auto;
 	text-align: center;
 }
 #footer #info {
-	min-width: 60%;
+	min-width: 300px;
 	max-width: 90%;
 	margin: auto;
 	display: block;
 }
 
+#footer table {
+	margin:auto;
+	
+}
+
 #footer a {
+	padding-left:10px; 
+	padding-right:10px; 
 	text-decoration: none;
 	color:#E9F4FF; 
 }
@@ -176,43 +184,22 @@ img, object, embed, video {
 	
 }
 
-table {
+#intro table {
 	margin:auto;
+	font-family: 'brandon-grotestque', sans-serif;
+	font-size: 42px; 
 }
 
-td {
-	text-align: center;
-	display: table-cell;
-	padding-left: 10px;
-	padding-right: 10px;
+#intro a {
+	padding-left:10px; 
+	padding-right:10px; 
+	text-decoration: none;
+	color:#3396FC; 
 }
 
-ul {
-	list-style-type: none;
-	width:90%;
-	margin:auto;
-	display:block;
-}
-
-li {
-	display: inline-block;
-	text-align: center;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-li a {
-	font-family: "brandon-grotesque" , sans-serif;
-	font-size:42px;
-	font-weight:300;
-	text-decoration:none;
-	color:004E9C;
-}
-
-li a:hover {
-	color:#B2C0CB;
-	text-decoration:none;
-	font-weight:400;
+#intro a:hover {
+	color:#004E9C;
+	
 }
 
 #logo {
