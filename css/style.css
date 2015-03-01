@@ -192,7 +192,8 @@ h2 {
 }
 
 #logo {
-	height: 35%;
+	width: 600px;
+	max-width: 65%;
 	display:block;
 	margin:auto;
 	padding-top:10%;

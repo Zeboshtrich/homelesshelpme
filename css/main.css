@@ -49,9 +49,9 @@ header .stuts span {
     width: 90%;
 }
 #gmap_canvas {
-    height: 85%;
+    height: 100%;
     position: relative;
-    width: 90%;
+    width: 100%;
 }
 .actions {
     background-color: #FFFFFF;
