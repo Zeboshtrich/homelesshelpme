@@ -114,6 +114,15 @@ img, object, embed, video {
 }
 }
 
+#headers {
+	font-family: 'brandon-grotesque', sans-serif;
+	font-size: 36px;
+	width:100%;
+	margin:auto;
+	display:block;
+	color: Black;
+	text-align: left;
+}
 #intro {
 	background-color: #E9F4FF;
 	height: 95%;
